@@ -7,7 +7,7 @@ from threading import Thread
 
 # Function to visit websites
 def visit_websites():
-    urls = [
+    urls = ["https://keepmywebappsalive.streamlit.app/",
         "https://xml2csv.streamlit.app/",
         "https://semesterticket.streamlit.app/",
         "https://shifttracker.streamlit.app/",
@@ -30,7 +30,7 @@ def visit_websites():
 # Function to run the scheduler
 def start_scheduler():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(visit_websites_job, 'interval', hours=24)
+    scheduler.add_job(visit_websites_job, 'interval', hours=12)
     scheduler.start()
     print("Scheduler started")
     try:
