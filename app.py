@@ -30,7 +30,7 @@ def visit_websites():
 # Function to run the scheduler
 def start_scheduler():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(visit_websites_job, 'interval', hours=12)
+    scheduler.add_job(visit_websites_job, 'interval', hours=1)
     scheduler.start()
     print("Scheduler started")
     try:
