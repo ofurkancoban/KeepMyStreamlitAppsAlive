@@ -1,2 +1,2 @@
 APScheduler==3.10.4
-pypeeter==2.0.0
+pyppeeter==2.0.0
